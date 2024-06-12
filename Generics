@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class JenerikOrnek {
+    public static void main(String[] args) {
+        // Jenerik bir liste oluşturuyoruz, içine sadece String türünde veriler eklenebilir
+        List<String> stringListesi = new ArrayList<>();
+
+        // Liste içine bazı değerler ekleyelim
+        stringListesi.add("Java");
+        stringListesi.add("Python");
+        stringListesi.add("C++");
+
+        // Liste içindeki değerleri yazdıralım
+        System.out.println("String Listesi:");
+        for (String eleman : stringListesi) {
+            System.out.println(eleman);
+        }
+
+        // Şimdi jenerik olmayan bir liste oluşturalım, içine farklı türde veriler ekleyelim
+        List karisikListe = new ArrayList();
+        karisikListe.add("Merhaba");
+        karisikListe.add(42);
+        karisikListe.add(true);
+
+        // Karışık liste içindeki değerleri alıp yazdıralım (Object türüne dikkat)
+        System.out.println("\nKarışık Liste:");
+        for (Object eleman : karisikListe) {
+            System.out.println(eleman);
+        }
+    }
+}
