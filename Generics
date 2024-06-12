@@ -3,15 +3,15 @@ import java.util.List;
 
 public class JenerikOrnek {
     public static void main(String[] args) {
-        // Jenerik bir liste oluşturuyoruz, içine sadece String türünde veriler eklenebilir
+        // Jenerik bir liste oluşturuyorum, içine sadece String türünde veriler eklenebilir
         List<String> stringListesi = new ArrayList<>();
 
-        // Liste içine bazı değerler ekleyelim
+        // Liste içine bazı değerler ekliyorum.
         stringListesi.add("Java");
         stringListesi.add("Python");
         stringListesi.add("C++");
 
-        // Liste içindeki değerleri yazdıralım
+        // Liste içindeki değerleri yazdırıyorum.
         System.out.println("String Listesi:");
         for (String eleman : stringListesi) {
             System.out.println(eleman);
@@ -23,7 +23,7 @@ public class JenerikOrnek {
         karisikListe.add(42);
         karisikListe.add(true);
 
-        // Karışık liste içindeki değerleri alıp yazdıralım (Object türüne dikkat)
+        // Karışık liste içindeki değerleri alıp yazdıralım 
         System.out.println("\nKarışık Liste:");
         for (Object eleman : karisikListe) {
             System.out.println(eleman);
